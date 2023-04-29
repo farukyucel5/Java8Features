@@ -11,22 +11,19 @@ interface ComparingTheNumbers{
 }
 @FunctionalInterface
 interface Multiplying{
-    void carpma(int a,int b);
+    void multiplication(int a,int b);
 }
 
 
 public class FunctionalInterfaces {
     public static void main(String[] args) {
 
-       //cmp.comparing(2,7);
+       cmp.comparing(2,7);
+       System.out.println(summing.summingTheNumbers(23, 45));
+       mty.multiplication(45,50);
+       System.out.println(summing1.summingTheNumbers(23, 34));
+       talk.accept("Faruk");
 
-       //System.out.println(summing.summingTheNumbers(23, 45));
-
-       //mty.carpma(45,50);
-
-       //System.out.println(summing1.summingTheNumbers(23, 34));
-
-       //talk.accept("Faruk");
 
         division.accept(25);
 
@@ -70,7 +67,7 @@ public class FunctionalInterfaces {
             if (number!=0)
                 System.out.println(100/number);
             else
-                System.out.println("sayı bölü sıfır tanımsızdır");
+                System.out.println("A number cannot be divided by zero");
 
 
         }
